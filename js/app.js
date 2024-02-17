@@ -368,7 +368,7 @@ const mediaPlayer = function(t, config) {
               resolve(list);
             } else {
               // 最后修改的结果
-              fetch('https://api.injahow.cn/meting/?server=' + meta[0] + '&type=' + meta[1] + '&id=' + meta[2] + '&r=' + Math.random())
+              fetch('https://api.injahow.cn/meting/ ' )
               .then(function (response) {
                 return response.json()
               }).then(function (json) {
